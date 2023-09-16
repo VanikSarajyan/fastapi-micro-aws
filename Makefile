@@ -6,7 +6,7 @@ format:
 	black *.py lib/*.py
 
 lint:
-	#link
+	pylint --disable=R,C *.py lib/*.py
 
 test:
 	#test
