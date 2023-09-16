@@ -1,15 +1,14 @@
 import uvicorn
 from fastapi import FastAPI
 
-
-from lib.logic import wiki
+from lib.logic import wiki as wiki_logic
 
 app = FastAPI()
 
 
 @app.get("/wiki")
 async def wiki():
-    return {"wiki": wiki()}
+    return {"wiki": wiki_logic()}
 
 
 if __name__ == "__main__":
