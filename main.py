@@ -1,3 +1,9 @@
+from fastapi import FastAPI
 from lib.logic import wiki
 
-print(wiki())
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
