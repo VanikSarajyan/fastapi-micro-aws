@@ -9,7 +9,10 @@ lint:
 	pylint --disable=R,C *.py lib/*.py
 
 test:
-	#test
+	pytest --cov=lib
+
+build:
+
 
 deploy:
 	#deploy
