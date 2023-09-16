@@ -3,7 +3,7 @@ install:
 	pip install -r requirements.txt
 
 format:
-	#format
+	black *.py lib/*.py
 
 lint:
 	#link
