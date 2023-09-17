@@ -3,7 +3,7 @@ install:
 	pip install -r requirements.txt
 
 format:
-	black *.py lib/*.py
+	black *.py lib/*.py --verbose
 
 lint:
 	pylint --disable=R,C *.py lib/*.py
